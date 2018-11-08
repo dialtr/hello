@@ -8,7 +8,7 @@ all: demo
 clean:
 	-rm -f demo *.o
 
-demo: main.o
+demo: helpers.o main.o
 	$(CXX) $(CXXFLAGS) -o demo $^
 
 .cc.o:
